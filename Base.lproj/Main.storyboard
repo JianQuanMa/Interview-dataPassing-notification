@@ -31,14 +31,48 @@
                     <view key="view" contentMode="scaleToFill" id="XDX-Uj-K7D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQk-h3-eKa">
+                                <rect key="frame" x="62" y="294" width="290" height="269"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="select date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4C-Ud-LLY">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="48.5"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ta5-K2-Tzb">
+                                        <rect key="frame" x="0.0" y="49" width="290" height="220"/>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ta5-K2-Tzb" firstAttribute="top" secondItem="f4C-Ud-LLY" secondAttribute="bottom" id="1qT-nl-cyJ"/>
+                                    <constraint firstItem="f4C-Ud-LLY" firstAttribute="height" secondItem="vQk-h3-eKa" secondAttribute="height" multiplier="0.18" id="2bl-R7-HKI"/>
+                                    <constraint firstItem="f4C-Ud-LLY" firstAttribute="leading" secondItem="vQk-h3-eKa" secondAttribute="leading" id="9su-cc-Itr"/>
+                                    <constraint firstAttribute="trailing" secondItem="f4C-Ud-LLY" secondAttribute="trailing" id="QfM-mp-zfn"/>
+                                    <constraint firstAttribute="bottom" secondItem="ta5-K2-Tzb" secondAttribute="bottom" id="VHk-K2-qXW"/>
+                                    <constraint firstItem="f4C-Ud-LLY" firstAttribute="top" secondItem="vQk-h3-eKa" secondAttribute="top" id="aUN-9h-21S"/>
+                                    <constraint firstItem="ta5-K2-Tzb" firstAttribute="leading" secondItem="vQk-h3-eKa" secondAttribute="leading" id="huH-qw-X5T"/>
+                                    <constraint firstAttribute="trailing" secondItem="ta5-K2-Tzb" secondAttribute="trailing" id="yvJ-QL-xR0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ngH-O3-bOy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vQk-h3-eKa" firstAttribute="centerX" secondItem="ngH-O3-bOy" secondAttribute="centerX" id="Z6m-e5-1eJ"/>
+                            <constraint firstItem="vQk-h3-eKa" firstAttribute="centerY" secondItem="ngH-O3-bOy" secondAttribute="centerY" id="t6F-P0-rdg"/>
+                            <constraint firstItem="vQk-h3-eKa" firstAttribute="height" secondItem="XDX-Uj-K7D" secondAttribute="height" multiplier="0.3" id="wf2-AW-qq8"/>
+                            <constraint firstItem="vQk-h3-eKa" firstAttribute="width" secondItem="XDX-Uj-K7D" secondAttribute="width" multiplier="0.7" id="ygk-yp-mQr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="4UZ-0c-1H5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAS-Hp-1ig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="536" y="-384"/>
+            <point key="canvasLocation" x="534.78260869565224" y="-384.375"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BlE-6G-Wtm">
@@ -62,6 +96,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
