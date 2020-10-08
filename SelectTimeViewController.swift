@@ -13,5 +13,11 @@ class SelectTimeViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func selectTimeButtonTapped(_ sender: UIButton) {
+    let sb = UIStoryboard(name: "DatePopupViewController", bundle: nil)
+        guard let popup = sb.instantiateInitialViewController() else {return}
+        self.present(popup, animated: true)
+    
+    }
     
 }

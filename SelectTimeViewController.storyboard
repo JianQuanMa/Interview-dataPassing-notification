@@ -28,7 +28,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="select time "/>
                                 <connections>
-                                    <segue destination="rga-gv-HZL" kind="presentation" id="rgT-4A-I6J"/>
+                                    <action selector="selectTimeButtonTapped:" destination="Utf-mM-GYw" eventType="touchUpInside" id="UOf-sP-oOU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,14 +41,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HTv-sP-IPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="115" y="146"/>
-        </scene>
-        <!--DatePopupViewController-->
-        <scene sceneID="eAL-wZ-m1q">
-            <objects>
-                <viewControllerPlaceholder storyboardName="DatePopupViewController" id="rga-gv-HZL" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WJ4-Sp-R9x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="813" y="34"/>
         </scene>
     </scenes>
     <resources>
