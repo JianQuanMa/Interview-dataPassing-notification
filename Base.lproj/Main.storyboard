@@ -8,6 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--SelectTimeViewController-->
+        <scene sceneID="cbG-d8-zJk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SelectTimeViewController" id="CJz-Qq-Tco" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="OAE-gt-2fF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYE-QK-YAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-361" y="376"/>
+        </scene>
         <!--Item 2-->
         <scene sceneID="7WB-w5-EFd">
             <objects>
@@ -39,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJu-Qh-yU0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="536" y="222"/>
+            <point key="canvasLocation" x="514" y="302"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="PUV-pD-u9I">
@@ -86,6 +96,7 @@
                     <connections>
                         <segue destination="Irv-ZQ-r4e" kind="relationship" relationship="viewControllers" id="Tk8-dK-uSD"/>
                         <segue destination="tca-fU-ygK" kind="relationship" relationship="viewControllers" id="tK2-Va-nrK"/>
+                        <segue destination="CJz-Qq-Tco" kind="relationship" relationship="viewControllers" id="7O1-zg-Lf5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jr2-SS-QNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -98,7 +109,7 @@
                 <viewControllerPlaceholder storyboardName="DatePopupViewController" id="yhA-RE-JvR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tv-0L-2p8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1326" y="-384"/>
+            <point key="canvasLocation" x="1291" y="-93"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

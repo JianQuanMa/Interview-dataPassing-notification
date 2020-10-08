@@ -11,7 +11,7 @@
         <!--Date Popup View Controller-->
         <scene sceneID="cot-4F-uiP">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="J84-02-7eo" customClass="DatePopupViewController" customModule="Interview_dataPassing_Notification" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="J84-02-7eo" customClass="DatePopupViewController" customModule="Interview_dataPassing_Notification" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WmG-aW-Pur">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
