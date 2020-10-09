@@ -38,7 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="save date"/>
                                 <connections>
-                                    <segue destination="yhA-RE-JvR" kind="presentation" id="VK2-Xz-zY9"/>
+                                    <segue destination="yhA-RE-JvR" kind="presentation" identifier="" id="VK2-Xz-zY9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,7 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="select date "/>
                                 <connections>
-                                    <segue destination="yhA-RE-JvR" kind="presentation" id="Mkz-0G-OjZ"/>
+                                    <segue destination="yhA-RE-JvR" kind="presentation" identifier="toDatePopupViewControllerSegue" id="Mkz-0G-OjZ"/>
                                 </connections>
                             </button>
                         </subviews>

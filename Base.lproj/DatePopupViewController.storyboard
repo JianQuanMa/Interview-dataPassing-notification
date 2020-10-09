@@ -66,6 +66,7 @@
                     </view>
                     <connections>
                         <outlet property="datePicker" destination="lvM-9v-Y3D" id="uKg-Dj-2KI"/>
+                        <outlet property="saveButton" destination="bjb-as-dmr" id="lxT-Nc-COE"/>
                         <outlet property="titleLabel" destination="Vlt-3h-kuM" id="Ehf-bK-iGE"/>
                     </connections>
                 </viewController>

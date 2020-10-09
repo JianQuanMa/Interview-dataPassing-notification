@@ -15,6 +15,12 @@ class ViewController: UITabBarController {
         //some changes
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDatePopupViewControllerSegue" {
+            let popup = segue.destination as! DatePopupViewController
+            popup.shouldShowTimePicker = false
+        }
+    }
 
 }
 
