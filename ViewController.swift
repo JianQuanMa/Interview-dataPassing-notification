@@ -12,15 +12,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //old way
+        //the commented method is the first notification observer method completed by a selector method, as supposed what we have now, the completion handler style
         //set up the notification lstiener
-        NotificationCenter.default.addObserver(self, selector: #selector(handlePopupClosing), name: .saveDateTime, object: nil)
+     //   NotificationCenter.default.addObserver(self, selector: #selector(handlePopupClosing), name: .saveDateTime, object: nil)
+        //new way
+        NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: OperationQueue.main) { (notification) in
+            let dateVC = notification.object as! DatePopupViewController
+            self.dateLabel.text = dateVC.formattedDate
+        }
     }
 
     //Mark: helper
-    @objc func handlePopupClosing(_ notification: Notification){
-        let dateVC = notification.object as! DatePopupViewController
-        dateLabel.text = dateVC.formattedDate
-    }
+//    @objc func handlePopupClosing(_ notification: Notification){
+//        let dateVC = notification.object as! DatePopupViewController
+//        dateLabel.text = dateVC.formattedDate
+//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDatePopupViewControllerSegue" {

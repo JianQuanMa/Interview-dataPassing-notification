@@ -21,7 +21,7 @@
         <!--Item 2-->
         <scene sceneID="7WB-w5-EFd">
             <objects>
-                <viewController id="tca-fU-ygK" sceneMemberID="viewController">
+                <viewController id="tca-fU-ygK" customClass="SecondViewController" customModule="Interview_dataPassing_Notification" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f3K-Zv-Yji">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,6 +54,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="1uq-WM-KSD"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="6jY-H6-c8Q" id="GnN-ev-Myj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJu-Qh-yU0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
