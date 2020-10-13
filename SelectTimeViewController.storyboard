@@ -16,16 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qi6-sq-Eow">
-                                <rect key="frame" x="47" y="74" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qi6-sq-Eow">
+                                <rect key="frame" x="40" y="74" width="124" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfK-1C-c57">
-                                <rect key="frame" x="292" y="69" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfK-1C-c57">
+                                <rect key="frame" x="282" y="74" width="80.5" height="36"/>
                                 <state key="normal" title="select time "/>
                                 <connections>
                                     <action selector="selectTimeButtonTapped:" destination="Utf-mM-GYw" eventType="touchUpInside" id="UOf-sP-oOU"/>
@@ -34,13 +32,26 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NbO-Gl-BqY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zfK-1C-c57" firstAttribute="leading" secondItem="Qi6-sq-Eow" secondAttribute="trailing" constant="118" id="2sj-xG-wgs"/>
+                            <constraint firstItem="zfK-1C-c57" firstAttribute="width" secondItem="Qi6-sq-Eow" secondAttribute="width" multiplier="0.645161" id="765-oI-4E0"/>
+                            <constraint firstItem="zfK-1C-c57" firstAttribute="top" secondItem="Qi6-sq-Eow" secondAttribute="top" id="DCE-Y4-Hr9"/>
+                            <constraint firstItem="Qi6-sq-Eow" firstAttribute="leading" secondItem="NbO-Gl-BqY" secondAttribute="leading" constant="40" id="Jmz-n6-qvQ"/>
+                            <constraint firstItem="Qi6-sq-Eow" firstAttribute="height" secondItem="Rxh-yX-snd" secondAttribute="height" multiplier="0.04" id="L4n-oq-Sw5"/>
+                            <constraint firstItem="Qi6-sq-Eow" firstAttribute="width" secondItem="Rxh-yX-snd" secondAttribute="width" multiplier="0.3" id="Qwc-HB-ndN"/>
+                            <constraint firstItem="zfK-1C-c57" firstAttribute="bottom" secondItem="Qi6-sq-Eow" secondAttribute="bottom" id="VUK-cd-KRO"/>
+                            <constraint firstItem="Qi6-sq-Eow" firstAttribute="top" secondItem="NbO-Gl-BqY" secondAttribute="top" constant="30" id="elX-QA-Y9O"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="EUC-ET-yTd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="Qi6-sq-Eow" id="zDa-H0-ir2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HTv-sP-IPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115" y="146"/>
+            <point key="canvasLocation" x="114.49275362318842" y="145.98214285714286"/>
         </scene>
     </scenes>
     <resources>
