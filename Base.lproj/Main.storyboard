@@ -36,21 +36,31 @@
                                 <rect key="frame" x="290" y="74" width="96" height="31"/>
                                 <state key="normal" title="save date"/>
                                 <connections>
-                                    <segue destination="yhA-RE-JvR" kind="presentation" identifier="" id="VK2-Xz-zY9"/>
+                                    <segue destination="yhA-RE-JvR" kind="presentation" identifier="toDatePopupViewControllerSegue" id="VK2-Xz-zY9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMl-aE-3D1">
+                                <rect key="frame" x="103.5" y="410.5" width="207" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eqS-a6-uX1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="mMl-aE-3D1" firstAttribute="width" secondItem="f3K-Zv-Yji" secondAttribute="width" multiplier="0.5" id="0cp-ip-h0l"/>
                             <constraint firstItem="6jY-H6-c8Q" firstAttribute="top" secondItem="eqS-a6-uX1" secondAttribute="top" constant="30" id="1c5-ZV-EtR"/>
                             <constraint firstItem="eqS-a6-uX1" firstAttribute="trailing" secondItem="wCo-0b-JZQ" secondAttribute="trailing" constant="28" id="Btn-Bq-uGN"/>
                             <constraint firstItem="6jY-H6-c8Q" firstAttribute="leading" secondItem="eqS-a6-uX1" secondAttribute="leading" constant="40" id="JoK-Sp-euI"/>
                             <constraint firstItem="wCo-0b-JZQ" firstAttribute="leading" secondItem="6jY-H6-c8Q" secondAttribute="leading" constant="250" id="QDB-UK-GyD"/>
                             <constraint firstItem="wCo-0b-JZQ" firstAttribute="top" secondItem="6jY-H6-c8Q" secondAttribute="top" id="U6K-C9-jOj"/>
                             <constraint firstItem="wCo-0b-JZQ" firstAttribute="bottom" secondItem="6jY-H6-c8Q" secondAttribute="bottom" id="bvK-u4-7Mh"/>
+                            <constraint firstItem="mMl-aE-3D1" firstAttribute="height" secondItem="f3K-Zv-Yji" secondAttribute="height" multiplier="0.04" id="eke-S2-Oyu"/>
                             <constraint firstItem="6jY-H6-c8Q" firstAttribute="width" secondItem="eqS-a6-uX1" secondAttribute="width" multiplier="0.3" id="mMK-tl-qw3"/>
                             <constraint firstItem="6jY-H6-c8Q" firstAttribute="height" secondItem="eqS-a6-uX1" secondAttribute="height" multiplier="0.04" id="sN4-fP-QD2"/>
+                            <constraint firstItem="mMl-aE-3D1" firstAttribute="centerY" secondItem="eqS-a6-uX1" secondAttribute="centerY" id="vRd-Db-tiQ"/>
+                            <constraint firstItem="mMl-aE-3D1" firstAttribute="centerX" secondItem="eqS-a6-uX1" secondAttribute="centerX" id="x8L-k9-zn3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="1uq-WM-KSD"/>
@@ -83,19 +93,29 @@
                                     <segue destination="yhA-RE-JvR" kind="presentation" identifier="toDatePopupViewControllerSegue" id="Mkz-0G-OjZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification center" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wad-JU-Gbh">
+                                <rect key="frame" x="103.5" y="410.5" width="207" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ngH-O3-bOy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wad-JU-Gbh" firstAttribute="height" secondItem="XDX-Uj-K7D" secondAttribute="height" multiplier="0.04" id="7w9-F2-BNR"/>
                             <constraint firstItem="EJA-AG-42X" firstAttribute="width" secondItem="XDX-Uj-K7D" secondAttribute="width" multiplier="0.2" id="LXi-Kr-UrH"/>
                             <constraint firstItem="EJA-AG-42X" firstAttribute="top" secondItem="Gvc-s8-iFt" secondAttribute="top" id="MJa-Rj-XVA"/>
                             <constraint firstItem="EJA-AG-42X" firstAttribute="centerY" secondItem="Gvc-s8-iFt" secondAttribute="centerY" id="TBH-9y-k9p"/>
                             <constraint firstItem="Gvc-s8-iFt" firstAttribute="width" secondItem="XDX-Uj-K7D" secondAttribute="width" multiplier="0.3" id="Ujv-s0-1dz"/>
+                            <constraint firstItem="wad-JU-Gbh" firstAttribute="width" secondItem="XDX-Uj-K7D" secondAttribute="width" multiplier="0.5" id="VFR-36-p2l"/>
+                            <constraint firstItem="wad-JU-Gbh" firstAttribute="centerY" secondItem="ngH-O3-bOy" secondAttribute="centerY" id="Yk2-UC-CaN"/>
                             <constraint firstItem="EJA-AG-42X" firstAttribute="leading" secondItem="Gvc-s8-iFt" secondAttribute="trailing" constant="97" id="cat-ED-m7X"/>
                             <constraint firstItem="Gvc-s8-iFt" firstAttribute="top" secondItem="ngH-O3-bOy" secondAttribute="top" constant="40" id="hL3-WF-o8C"/>
                             <constraint firstItem="ngH-O3-bOy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EJA-AG-42X" secondAttribute="trailing" symbolic="YES" id="jXQ-zQ-xyk"/>
                             <constraint firstItem="EJA-AG-42X" firstAttribute="bottom" secondItem="Gvc-s8-iFt" secondAttribute="bottom" id="laz-pA-p6R"/>
                             <constraint firstItem="Gvc-s8-iFt" firstAttribute="leading" secondItem="ngH-O3-bOy" secondAttribute="leading" constant="50" id="ooa-EJ-xdz"/>
+                            <constraint firstItem="wad-JU-Gbh" firstAttribute="centerX" secondItem="ngH-O3-bOy" secondAttribute="centerX" id="owo-Da-dZ4"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="4UZ-0c-1H5"/>
