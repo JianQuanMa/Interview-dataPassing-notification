@@ -7,14 +7,21 @@
 
 import UIKit
 
-class ViewController: UITabBarController {
+class ViewController: UIViewController {
 
+    @IBOutlet weak var dateLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        //some changes
+        //set up the notification lstiener
+        NotificationCenter.default.addObserver(self, selector: #selector(handlePopupClosing), name: .saveDateTime, object: nil)
     }
 
+    //Mark: helper
+    @objc func handlePopupClosing(_ notification: Notification){
+        let dateVC = notification.object as! DatePopupViewController
+        dateLabel.text = dateVC.formattedDate
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDatePopupViewControllerSegue" {
             let popup = segue.destination as! DatePopupViewController
