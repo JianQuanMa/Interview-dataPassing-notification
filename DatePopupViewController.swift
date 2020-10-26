@@ -43,7 +43,7 @@ class DatePopupViewController: UIViewController {
             onSave?(formattedTime)
             delegate?.popupValueSelected(formattedTime)
         }else{
-            onSave?(formattedDate )
+            onSave?(formattedDate)
             delegate?.popupValueSelected(formattedDate)
         }
         
