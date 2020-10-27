@@ -40,7 +40,9 @@ class SecondViewController: UIViewController{
             let popup = segue.destination as! DatePopupViewController
             popup.shouldShowTimePicker = false
             //assign to a func
-            popup.onSave = onSave
+            popup.onSave = { [weak self] (data) in
+                self?.dateLabel.text = data
+            }
         }
     }
     
