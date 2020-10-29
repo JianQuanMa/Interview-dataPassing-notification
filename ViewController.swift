@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var dateLabel: UILabel!
+    //first option to break retain cycle, just add weak to observer
     var observer: NSObjectProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +25,10 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         //new way
-        observer = NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: OperationQueue.main) { (notification) in
+        // second option to break retain cycle: making observer's closure 's refernece to self weak
+        observer = NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: OperationQueue.main) { [weak self]  (notification) in
             let dateVC = notification.object as! DatePopupViewController
-            self.dateLabel.text = dateVC.formattedDate
+            self!.dateLabel.text = dateVC.formattedDate
         }
     }
     override func viewDidDisappear(_ animated: Bool) {
@@ -34,7 +36,13 @@ class ViewController: UIViewController {
         if let observer = observer {
             NotificationCenter.default.removeObserver(observer)
         }
-        
+
+    }
+    
+    @IBAction func programaticWayToPupOp(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "DatePopupViewController", bundle: nil)
+        let popup = sb.instantiateInitialViewController()! as! DatePopupViewController
+        self.present(popup, animated: true)
     }
 
     //Mark: helper
@@ -48,6 +56,10 @@ class ViewController: UIViewController {
             let popup = segue.destination as! DatePopupViewController
             popup.shouldShowTimePicker = false
         }
+    }
+    
+    deinit{
+            print("NotificationViewController is being deinited")
     }
 
 }

@@ -50,4 +50,8 @@ class DatePopupViewController: UIViewController {
         dismiss(animated: true) 
     }
     
+    deinit{
+        print("datePopupViewController being deinited")
+    }
+    
 }
