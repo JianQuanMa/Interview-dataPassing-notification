@@ -14,7 +14,7 @@ class DatePopupViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     
     var shouldShowTimePicker = false
-    var delegate: PopupDelegate?
+    weak var delegate: PopupDelegate?
     
     var onSave: ((_ data: String) -> ())?
     var formattedDate: String{
@@ -30,6 +30,7 @@ class DatePopupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("datePopupViewController being inited")
         if shouldShowTimePicker {
             titleLabel.text = "Select time"
             datePicker.datePickerMode = .time
